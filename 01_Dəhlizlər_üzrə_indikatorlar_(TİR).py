@@ -14,7 +14,8 @@ max_year = max_year_month_pre_year()[0]
 max_month = max_year_month_pre_year()[1]
 
 
-st.markdown(f'###### Dəhlizlər üzrə cari ilin {max_month} ayı ilə ötən ilin analoji dövrü ilə müqayisəsi, ümumi həcm, min ton ilə')
+st.markdown(f'### Dəhlizlər üzrə cari ilin göstəricisi, min ton ilə')
+st.markdown(f'##### Ötən ilin analoji dövrü ilə müqayisəsində dəyişiklik, ilk {max_month} ay')
 
 col1, col2, col3 = st.columns(3)
 col1.metric(list(data_for_metrics.keys())[0], data_for_metrics[list(data_for_metrics.keys())[0]][0],
