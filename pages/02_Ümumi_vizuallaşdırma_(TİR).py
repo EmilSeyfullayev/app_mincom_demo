@@ -28,7 +28,7 @@ with tab2:
                                      0, key='selected_post')
     elif selected_flow == "Ölkədən çıxan TIR-lar üzrə":
         with c2:
-            selected_post = st.mulselectbox("Seçilmiş post",
+            selected_post = st.selectbox("Seçilmiş post",
                                      ['BDT Limanı', 'Qırmızı körpü', 'Astara', 'Biləsuvar', 'Eyvazlı',
                                        'Samur', 'Şahtaxtı və ya Culfa', 'Mazımçay', 'Şirvanlı', 'Xanoba', 'Sədərək'],
                                      0, key='selected_post')
