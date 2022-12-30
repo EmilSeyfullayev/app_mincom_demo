@@ -2,6 +2,8 @@ import streamlit as st
 from a_tir_functions import data_for_selected_country
 from a_read_db import country_names, max_year_month_pre_year
 
+st.markdown("<h6 style='text-align: right; color: #075586;'>©Nəqliyyat siyasəti şöbəsi - Tranzit yükdaşımalar</h6>",
+        unsafe_allow_html=True)
 country_names = country_names()
 max_year = max_year_month_pre_year()[0]
 max_month = max_year_month_pre_year()[1]

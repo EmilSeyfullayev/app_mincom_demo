@@ -1,8 +1,9 @@
 import streamlit as st
 from a_data_for_visualisations_of_TİR_data_by_country import data_for_sankey, sankey_figure_for_tir, trend_figure_acording_to_post_in_out_flow_count_or_weight
 
-st. set_page_config(layout="wide")
-
+st.set_page_config(layout="wide")
+st.markdown("<h6 style='text-align: right; color: #075586;'>©Nəqliyyat siyasəti şöbəsi - Tranzit yükdaşımalar</h6>",
+        unsafe_allow_html=True)
 df = data_for_sankey()
 
 tab1, tab2 = st.tabs(['Ərazi və postlar üzrə', 'Postların trend təsviri'])

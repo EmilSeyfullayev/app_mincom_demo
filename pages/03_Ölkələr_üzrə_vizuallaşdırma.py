@@ -4,6 +4,8 @@ from a_read_db import country_names
 from a_data_for_visualisations_of_TİR_data_by_country import data_for_trend_line_country_based, \
     data_for_country_flow_by_year_and_countries
 
+st.markdown("<h6 style='text-align: right; color: #075586;'>©Nəqliyyat siyasəti şöbəsi - Tranzit yükdaşımalar</h6>",
+        unsafe_allow_html=True)
 
 country_names = country_names()
 selected_country = st.sidebar.selectbox("Seçilmiş ölkə", country_names, 0)

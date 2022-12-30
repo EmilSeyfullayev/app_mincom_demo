@@ -2,6 +2,9 @@ import pandas as pd
 import streamlit as st
 from a_ady_functions import iller_uzre_pivot_table, unique_country_names
 
+st.markdown("<h6 style='text-align: right; color: #075586;'>©Nəqliyyat siyasəti şöbəsi - Tranzit yükdaşımalar</h6>",
+        unsafe_allow_html=True)
+
 unique_country_names_list = unique_country_names()
 selected_country = st.sidebar.selectbox("Seçilmiş ölkə",
                                         unique_country_names_list,
