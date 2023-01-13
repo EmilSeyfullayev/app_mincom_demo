@@ -6,7 +6,7 @@ st.set_page_config(layout='wide', initial_sidebar_state='expanded')
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-st.markdown("<h6 style='text-align: right; color: #075586;'>©Nəqliyyat siyasəti şöbəsi - Tranzit yükdaşımalar </h6>",
+st.markdown("<h6 style='text-align: right; color: #075586;'>©Nəqliyyat siyasəti şöbəsi - Tranzit yükdaşımalar</h6>",
         unsafe_allow_html=True)
 
 data_for_metrics = data_for_metrics()
