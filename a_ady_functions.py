@@ -5,7 +5,7 @@ import numpy as np
 
 @st.cache()
 def read_ady_data():
-    df = pd.read_excel('22_noyabr_ady.xlsx')
+    df = pd.read_excel('ady_tranzit_november_operativ_december_smart.xlsx')
     df['Həcm (min ton)'] = df['Həcm']/1000
     df['Ay_sirasi'] = df['Tarix Hierarchy - Ay']
     monthes_dict = {1: 'Yanvar', 2: 'Fevral', 3: 'Mart', 4: 'Aprel', 5: "May", 6: "İyun", 7: "İyul", 8: "Avqust",
