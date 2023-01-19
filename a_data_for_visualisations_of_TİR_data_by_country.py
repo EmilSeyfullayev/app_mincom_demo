@@ -74,8 +74,8 @@ def sankey_figure_for_tir(selected_year):
         ['Compass_point_x', 'CUST_NAME_x', 'CUST_NAME_y', 'Compass_point_y', 'Count']]
     f = f.sort_values(['Count', ], ascending=False)
     f.columns = ['Ölkəyə daxil olduğu ərazi', 
-                 # 'Ölkəyə daxil olduğu post', 
-                 # 'Ölkədən çıxdığı post',
+                 'Ölkəyə daxil olduğu post', 
+                 'Ölkədən çıxdığı post',
                  'Ölkədən çıxdığı ərazi', 
                  'Tırların sayı']
     f_dict = {}
