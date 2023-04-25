@@ -5,7 +5,7 @@ import streamlit as st
 
 @st.cache(allow_output_mutation=True)
 def read_db():
-    connection = sqlite3.connect('tir_data_for_App_2019_2023_March_country_names_not_corrected_with_dehliz.db')
+    connection = sqlite3.connect('tir_data_for_app_2019_2023_March.db')
     # connection = sqlite3.connect('TIR_Data_for_app.db')
     df = pd.read_sql('''select * from 'table' ''', connection)
     df = df[df['CONS_NAME_x'] != 'Digər azad olmalar']
