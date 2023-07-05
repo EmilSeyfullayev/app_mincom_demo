@@ -8,7 +8,7 @@ def read_db():
     connection = sqlite3.connect('data_for_app_2019_2023_May.db')
     # connection = sqlite3.connect('TIR_Data_for_app.db')
     df = pd.read_sql('''select * from 'table' ''', connection)
-    # df = df[df['CONS_NAME_x'] != 'Digər azad olmalar']
+    df = df[df['CONS_NAME_x'] != 'Digər azad olmalar']
     df = df[df['CUST_NAME_x'].isin(
         ['Qırmızı körpü', 'BDT Limanı', 'Mazımçay', 'Samur', 'Biləsuvar', 'Eyvazlı', 'Sədərək', 'Astara', 'Şirvanlı',
          'Xanoba', 'Culfa', 'Şahtaxtı'])]
