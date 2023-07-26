@@ -4,7 +4,7 @@ import sqlite3
 import datetime
 import streamlit as st
 
-path = 'ady_For_App_all_regimes_2017_2023__May.db'
+path = 'ady_For_App_all_regimes_2017_2023__İyun.db'
 
 
 @st.cache(allow_output_mutation=True)
