@@ -6,7 +6,7 @@ import streamlit as st
 @st.cache(allow_output_mutation=True)
 def read_db():
     connection = sqlite3.connect('data_for_app_2019_2023_August.db')
-    connection = sqlite3.connect('TIR_Data_for_app.db')
+    # connection = sqlite3.connect('TIR_Data_for_app.db')
     df = pd.read_sql('''select * from 'table' ''', connection)
     # df = pd.read_excel("TIR_2019_2023_June_similar_to_app_data.xlsx", sheet_name='Sheet1')
     # df = df[df['CONS_NAME_x'] != 'Digər azad olmalar']
