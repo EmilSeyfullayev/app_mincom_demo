@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 
+np.bool = np.bool_
+
 
 def pivot_tables_by_country(df, selected_country, selected_years, selected_max_month, type='dehlizle'):
     if type == 'dehlizle':
