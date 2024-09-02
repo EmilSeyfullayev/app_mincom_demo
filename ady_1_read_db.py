@@ -4,6 +4,8 @@ import sqlite3
 import datetime
 import streamlit as st
 
+np.bool = np.bool_
+
 path = 'ady_For_App_all_regimes_2017_2023__Avqust.db'
 
 
