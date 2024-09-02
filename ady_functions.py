@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from ady_1_read_db import read_ady_db, transit_ady_data
 
+np.bool = np.bool_
 
 @st.cache()
 def read_ady_data():
